@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Responsive</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Verdana,sans-serif;
+      font-size: 0.9em;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header ul {
+      padding: 0;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+
+    header a {
+      text-decoration: none;
+      padding: 15px;
+      float: left;
+      color: white;
+      font-size: 16px;
+
+    }
+
+    header a:hover {
+      background-color: black;
+    }
+
+    header::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .item1 {
+      float: left;
+      width: 20%;
+      padding: 20px;
+    }
+
+    .item1 a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: blue;
+    }
+
+    .item2 {
+      float: left;
+      width: 60%;
+      padding: 20px;
+    }
+
+    .item3 {
+      float: left;
+      width: 20%;
+    }
+
+    .item3 p {
+      padding: 30px;
+      border: 1px solid lightgray;
+      margin: 30px;
+      text-align: center;
+    }
+
+    footer {
+      clear: both;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 8px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .item1, .item2, .item3 {
+        width: 100%;
+        float: none;
+        padding: 10px;
+      }
+
+      .login {
+        float: none;
+        text-align: center;
+      }
+
+      .sidebar {
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <ul>
+    <a href="">Logo</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Projects</a>
+    <a href="">Contact</a>
+    <a class="login" href="">Login</a>
+  </ul>
+
+</header>
+<div class="content">
+  <div class="item1">
+    <a href="https://vi.wikipedia.org/wiki/Hoàng_Sa_(huyện)">Hoàng Sa</a>
+    <a href="https://vi.wikipedia.org/wiki/Trường_Sa_(huyện)">Trường Sa</a>
+    <a href="https://vi.wikipedia.org/wiki/Lý_Sơn">Lý Sơn</a>
+  </div>
+  <div class="item2">
+    <h1>Việt Nam</h1>
+    <p>Lặng lẽ đêm đang buông xuống, mặt trời đã lặn dần sau tòa nhà cao chọc trời. Ánh đèn đường bắt đầu tỏa sáng, tạo nên bức tranh ánh sáng lung linh. Những cơn gió nhẹ thoảng qua, mang theo hương thơm của hoa lài và biển cả xa xăm.
+
+      Trên bầu trời, hàng ngàn vì sao lấp lánh, tạo nên một cảm giác như đang lạc vào một thế giới thần tiên. Dưới chân, đường phố vẫn đang nhộn nhịp, với tiếng cười và những bước chân vội vã của người qua đường.
+
+      Một cô gái đang đứng trên cầu, nhìn xuống con sông êm đềm chảy qua thành phố. Cô nhớ về những ngày thơ ấu, khi cô và người bạn thân chơi đùa cùng nhau ở đây. Thời gian trôi nhanh, nhưng những kỷ niệm ấy vẫn còn đọng mãi trong trái tim.
+
+      Vào lúc này, những nghĩ suy nhẹ nhàng bắt đầu tràn ngập. Cô tự hỏi về ý nghĩa của cuộc sống và mục đích của bản thân mình. Những dự định và ước mơ đã từng thắp sáng trong tâm hồn, liệu chúng có thể trở thành hiện thực?
+
+      Trong khoảnh khắc lặng lẽ này, cô cảm nhận sự thấu hiểu sâu sắc về cuộc sống và vẻ đẹp của thế giới xung quanh. Cô biết rằng, dù cho thách thức có đến với bất kỳ ai, cách để vượt qua chính là kiên nhẫn, sự cố gắng và lòng dũng cảm.
+</p>
+
+  </div>
+  <div class="item3">
+    <p>Chữa trĩ hiệu quả</p>
+    <p>Chữa đau xương khớp</p>
+    <p>Cách kiếm người yêu nhanh</p>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2023 wí kì vi ên </p>
+</footer>
+</body>
+</html>
